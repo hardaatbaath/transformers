@@ -176,7 +176,7 @@ def get_ds(config):
     train_dataloader = DataLoader(train_ds, batch_size = config['batch_size'], shuffle = True)
     val_dataloader = DataLoader(val_ds, batch_size = 1, shuffle = True)
 
-    print("train_ds exited")
+    print("Training Dataset exited...")
 
     return train_dataloader, val_dataloader, tokenizer_src, tokenizer_tgt
 
@@ -197,12 +197,12 @@ def train_model(config):
 
     train_dataloader, val_dataloader, tokenizer_src, tokenizer_tgt = get_ds(config)
     model = get_model(config, tokenizer_src.get_vocab_size(), tokenizer_tgt.get_vocab_size()).to(device)
-    print("model created")
+    print("Model created...")
 
     # Tensorboard
     writer = SummaryWriter(config['experiment_name'])
     optimizer = torch.optim.Adam(model.parameters(), lr = config['lr'], eps = 1e-9)
-    print("tensorboard initialised")
+    print("Tensorboard initialised...")
 
     # If the user specified a model to preload before training, load it
     initial_epoch = 0

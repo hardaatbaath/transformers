@@ -3,7 +3,7 @@ from pathlib import Path
 def get_config():
     return {
         "batch_size": 8,
-        "num_epochs": 20,
+        "num_epochs": 5, # Each epoch takes around 20 min on T$ GPU
         "lr": 10 ** -4,
         "seq_len": 350,
         "d_model": 512,
