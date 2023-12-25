@@ -5,10 +5,7 @@ Thanks to [Umar Jamilai](https://www.youtube.com/@umarjamilai) and his videos on
 
 More comments will be added in the future to make the process of understanding the code easier.
 
-## Execution:
-You can use the **requiremets.txt** file to run it on your computer or use the **colab_train.ipynb** to run it on Google Colab
-<br>
-To run on Colab, remember to add the files **config.py, data.py, model.py, train.py**
+I have used the opus_books dataset for this code.
 
 ## Citation:
 Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, L., & Polosukhin, I. (2017). 
