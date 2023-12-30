@@ -280,7 +280,7 @@ def train_model(config):
     writer.close()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print("Starting...")
     warnings.filterwarnings("ignore")
     config = get_config()
