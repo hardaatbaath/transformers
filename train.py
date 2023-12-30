@@ -3,7 +3,6 @@ import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader, random_split
 from torch.utils.tensorboard import SummaryWriter
 import torchmetrics
-import tensorflow as tf
 
 from dataset import BilingualDataset, causal_mask
 from model import build_transformer
@@ -201,9 +200,6 @@ def train_model(config):
     print("Model created...")
 
     # Tensorboard
-    # dirpath = "/Users/hardaatsinghbaath/Desktop/Code Stuff/transformers_pytorch"
-    # if tf.gfile.Exists(dirpath):
-    #     tf.gfile.DeleteRecursively(dirpath)
     writer = SummaryWriter(config['experiment_name'])
     optimizer = torch.optim.Adam(model.parameters(), lr = config['lr'], eps = 1e-9)
     print("Tensorboard initialised...")
