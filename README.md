@@ -9,5 +9,7 @@ I have used the opus_books dataset for this code.
 
 ## Citation:
 Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, L., & Polosukhin, I. (2017). 
+<br>
 *Attention Is All You Need*. 
+<br>
 [ArXiv.](https://arxiv.org/abs/1706.03762)
