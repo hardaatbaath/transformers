@@ -3,7 +3,7 @@ This is the implementation of the paper [Attention Is All You Need](https://arxi
 The code has been written in Python, so make the necessary changes to the scripts to run them.
 Thanks to [Umar Jamilai](https://www.youtube.com/@umarjamilai) and his videos on the topic, they were extremely helpful and valuable.
 
-More comments will be added in the future to make the process of understanding the code easier.
+More comments will be added to make understanding the code easier.
 
 I have used the opus_books dataset for this code.
 
